@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyGameApp"
+             BackgroundColor="LightGreen"
+             x:Class="MyGameApp.MainPage">
+    <StackLayout Orientation="Vertical">
+        <StackLayout x:Name="IntroLayout" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="LetsPlayButton" BackgroundColor="#455A64" WidthRequest="200" FontSize="30" HeightRequest="70" TextColor="#ffffff" Text="ΠΑΙΞΕΕΕ" FontFamily="Roboto-Medium.ttf" Clicked="Button_OnClicked"/>
+            <Button x:Name="QuickKButton" BackgroundColor="#455A64" WidthRequest="200" FontSize="30" HeightRequest="70" TextColor="#ffffff" Text="ΔΙΑΒΑΣΜΑ" FontFamily="Roboto-Medium.ttf" Clicked="ButtonQ_OnClicked"/>
+        </StackLayout>
+        <StackLayout x:Name="MainLayout" Orientation="Vertical" IsVisible="False" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="FirstButton" Margin="0,0,0,30" BackgroundColor="Blue" WidthRequest="200" HeightRequest="70" FontSize="20"  TextColor="White" Text="ΠΑΤΑ ΜΕ" HorizontalOptions="Center" FontFamily="Roboto-Medium.ttf" VerticalOptions="CenterAndExpand" Clicked="Button1_OnClicked"/>
+            <Button x:Name="SecondButton" Margin="0,0,0,30" BackgroundColor="Red" WidthRequest="200" HeightRequest="70"  FontSize="20" TextColor="Black" Text="ΟΧΙ ΕΜΕΝΑ!" HorizontalOptions="Center" FontFamily="Roboto-Medium.ttf" VerticalOptions="CenterAndExpand" Clicked="Button2_OnClicked"/>
+            <Button x:Name="ThirdButton" Margin="0,0,0,30" BackgroundColor="Yellow" FontSize="20" HeightRequest="70" WidthRequest="200"  TextColor="Black" Text="ΕΓΩ ΕΙΜΑΙ ΡΕ!" HorizontalOptions="Center" FontFamily="Roboto-Medium.ttf" VerticalOptions="CenterAndExpand" Clicked="Button3_OnClicked"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" IsVisible="False" x:Name="ExtraLayout" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="Black">
+            <Button x:Name="QuickKButton2" Margin="0,0,30,0" BackgroundColor="Black" FontSize="20" HeightRequest="70" WidthRequest="200"  TextColor="Wheat" Text="ΔΙΑΒΑΣΜΑ ΣΟΡΡΥ" HorizontalOptions="Center" FontFamily="Roboto-Medium.ttf" VerticalOptions="End" Clicked="ButtonQ_OnClicked"/>
+            <Button x:Name="HelpButton" BackgroundColor="Black" FontSize="20" HeightRequest="70" WidthRequest="200"  TextColor="Wheat" Text="ΤΙ ΠΑΙΖΕΙ ΕΔΩ;" HorizontalOptions="Center" FontFamily="Roboto-Medium.ttf" VerticalOptions="End" Clicked="HelpButton_OnClicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
